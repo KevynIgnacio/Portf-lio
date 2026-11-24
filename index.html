@@ -1,116 +1,135 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio | Kevyn Ignacio</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1018">
+  <meta name="description" content="Kevyn Ignacio — desenvolvimento web, sistemas e soluções em tecnologia.">
+  <title>Kevyn Ignacio — Desenvolvedor Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="logo">&lt;/Kevyn&gt;</div>
-                <ul class="nav-list">
-                    <li><a href="#sobremim">SOBRE</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#projetos">PROJETOS</a></li>
-                    <li><a href="#contato">CONTATO</a></li>
-                </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="logo" href="#inicio" aria-label="Kevyn, início">&lt;/kevyn&gt;<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span><b class="sr-only">Abrir menu</b>
+      </button>
+      <ul class="nav-list" id="nav-menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a class="nav-contact" href="#contato">Contato <span>↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
+  <main>
+    <section class="hero container" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> DESENVOLVIMENTO WEB & TECNOLOGIA</p>
+        <h1>Transformando<br>ideias em <em>soluções.</em></h1>
+        <p class="hero-description">Olá, eu sou <strong>Kevyn Ignacio</strong>. Desenvolvo interfaces e sistemas web, conectando código, dados e criatividade para resolver problemas do dia a dia.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Explorar projetos <span>↓</span></a>
+          <a class="button button-secondary" href="mailto:kevynestudante01@gmail.com">Vamos conversar <span>↗</span></a>
+        </div>
+        <div class="hero-meta"><span>HTML · CSS · JavaScript</span><span>PHP · MySQL</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-grid"></div>
+        <div class="portrait-frame">
+          <img src="Eu.png" alt="Imagem de apresentação de Kevyn Ignacio">
+          <div class="portrait-caption"><span>KEVYN IGNACIO</span><span>DEV / TI</span></div>
+        </div>
+        <span class="floating-code code-a">&lt;hello world /&gt;</span>
+        <span class="floating-code code-b">{ construir(); }</span>
+        <span class="visual-index">01 — PORTFÓLIO</span>
+      </div>
+    </section>
 
-        <section id="sobremim">
+    <section class="section about-section" id="sobre">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">01 / SOBRE</p>
+          <h2>Curiosidade que<br>vira <em>construção.</em></h2>
+        </div>
+        <div class="about-content">
+          <div class="about-main">
+            <p>Gosto de entender como as coisas funcionam e, principalmente, como podem funcionar melhor. Meu foco está no desenvolvimento web: criar interfaces, implementar funcionalidades e conectar aplicações a bancos de dados.</p>
+            <p>Também tenho contato com suporte técnico e infraestrutura de TI, experiências que ampliam minha visão sobre tecnologia e sobre as necessidades reais de quem utiliza um sistema.</p>
+          </div>
+          <aside class="about-facts">
+            <div><span>FOCO</span><strong>Desenvolvimento web</strong></div>
+            <div><span>ABORDAGEM</span><strong>Aprender fazendo</strong></div>
+            <div><span>INTERESSE</span><strong>Soluções úteis e simples</strong></div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-            <div class="welcome-linha">
-                <h1>Welcome!</h1>
+    <section class="section skills-section" id="tecnologias">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div><p class="eyebrow">02 / TECNOLOGIAS</p><h2>Ferramentas do<br><em>meu dia a dia.</em></h2></div>
+          <p class="heading-note">Conhecimentos que utilizo para desenvolver, integrar e manter aplicações.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card"><span class="skill-number">01</span><div class="skill-symbol">&lt;/&gt;</div><h3>Front-end</h3><p>Estruturação de páginas, estilização e construção de interfaces responsivas.</p><div class="tags"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span></div></article>
+          <article class="skill-card"><span class="skill-number">02</span><div class="skill-symbol">{ }</div><h3>JavaScript</h3><p>Interatividade, manipulação do DOM, eventos e lógica no navegador.</p><div class="tags"><span>JavaScript</span><span>jQuery</span></div></article>
+          <article class="skill-card"><span class="skill-number">03</span><div class="skill-symbol">PHP</div><h3>Back-end</h3><p>Regras de negócio, processamento de informações e comunicação entre sistemas.</p><div class="tags"><span>PHP</span><span>APIs</span></div></article>
+          <article class="skill-card"><span class="skill-number">04</span><div class="skill-symbol">DB_</div><h3>Banco de dados</h3><p>Consultas, relacionamentos, organização e integração de dados.</p><div class="tags"><span>MySQL</span><span>SQL</span></div></article>
+          <article class="skill-card"><span class="skill-number">05</span><div class="skill-symbol">IT/</div><h3>Suporte & infraestrutura</h3><p>Diagnóstico técnico, manutenção de equipamentos, redes e suporte a usuários.</p><div class="tags"><span>Windows</span><span>Hardware</span><span>Redes</span></div></article>
+          <article class="skill-card skill-card-note"><span class="skill-number">+</span><div class="skill-symbol">↗</div><h3>Em constante evolução</h3><p>Explorando novas ferramentas e aprofundando fundamentos para construir soluções cada vez melhores.</p></article>
+        </div>
+      </div>
+    </section>
 
-                <div class="sobre-imagem">
-                    <img src="Eu.png" alt="Ilustração de Eu">
-                </div>
-            </div>
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div><p class="eyebrow">03 / PROJETOS</p><h2>Conhecimento<br>em <em>prática.</em></h2></div>
+          <p class="heading-note">Uma seleção de projetos e tipos de solução que representam minha experiência prática.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-preview preview-system"><div class="mock-browser"><div class="mock-top"><i></i><i></i><i></i><span>painel / gestão</span></div><div class="mock-layout"><div class="mock-sidebar"></div><div class="mock-content"><b></b><div class="mock-row"><i></i><i></i><i></i></div><div class="mock-row"><i></i><i></i><i></i></div><div class="mock-row"><i></i><i></i><i></i></div></div></div></div><span class="preview-label">WEB APP / 01</span></div>
+            <div class="project-info"><div class="project-topline"><span>SISTEMAS WEB</span><span>01</span></div><h3>Sistemas de gestão interna</h3><p>Desenvolvimento de módulos e funcionalidades para organizar informações, apoiar processos e facilitar rotinas operacionais.</p><div class="tags"><span>PHP</span><span>JavaScript</span><span>MySQL</span><span>Bootstrap</span></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-preview preview-data"><div class="dashboard-mock"><div class="dash-heading"><i></i><i></i><i></i></div><div class="dash-cards"><i></i><i></i><i></i></div><div class="dash-chart"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div></div><span class="preview-label">DATA / 02</span></div>
+            <div class="project-info"><div class="project-topline"><span>DADOS & INDICADORES</span><span>02</span></div><h3>Dashboard de pedidos</h3><p>Consulta e organização de dados de pedidos de venda, com relacionamentos entre informações e visualização de indicadores.</p><div class="tags"><span>SQL</span><span>MySQL</span><span>BI</span></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-preview preview-website"><div class="site-mock"><div class="site-nav"></div><div class="site-title"></div><div class="site-subtitle"></div><div class="site-cta"></div></div><span class="preview-label">FRONT-END / 03</span></div>
+            <div class="project-info"><div class="project-topline"><span>INTERFACES</span><span>03</span></div><h3>Sites e páginas responsivas</h3><p>Criação de páginas com atenção à hierarquia visual, adaptação para dispositivos móveis e facilidade de navegação.</p><div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-preview preview-support"><div class="support-mock"><span>01</span><span>02</span><span>03</span><div></div></div><span class="preview-label">IT SUPPORT / 04</span></div>
+            <div class="project-info"><div class="project-topline"><span>TECNOLOGIA</span><span>04</span></div><h3>Suporte e infraestrutura</h3><p>Atuação na identificação de falhas, manutenção de equipamentos e apoio à continuidade dos recursos de TI.</p><div class="tags"><span>Hardware</span><span>Windows</span><span>Redes</span></div></div>
+          </article>
+        </div>
+        <p class="projects-disclaimer">Os cards representam frentes de trabalho e projetos desenvolvidos. Estudos de caso, capturas de tela e links públicos serão adicionados conforme os materiais forem organizados.</p>
+      </div>
+    </section>
 
-                
-            <di class="sobre-texto">
-                <p>Sou Kevyn Ignacio, desenvolvedor web em formação, focado na criação de interfaces modernas, organizadas e funcionais. 
-                Possuo conhecimentos em HTML semântico, CSS para estilização e responsividade, além de JavaScript para interatividade e manipulação do DOM. <br><br>
-                Busco constantemente evoluir meu raciocínio lógico e minha capacidade de resolução de problemas, aplicando boas práticas e construindo projetos que fortalecem minha base técnica.
-                </p>
-            </div>
+    <section class="contact-section" id="contato">
+      <div class="container contact-panel">
+        <div><p class="eyebrow">04 / CONTATO</p><h2>Vamos criar algo<br><em>interessante?</em></h2><p>Tem um projeto, uma ideia ou quer trocar uma ideia sobre tecnologia? Me chama.</p></div>
+        <div class="contact-links">
+          <a href="mailto:kevynestudante01@gmail.com"><span>E-MAIL</span><strong>kevynestudante01@gmail.com ↗</strong></a>
+          <a href="https://github.com/KevynIgnacio" target="_blank" rel="noopener noreferrer"><span>GITHUB</span><strong>github.com/KevynIgnacio ↗</strong></a>
+          <a href="https://www.linkedin.com/in/kevyn-ignacio-a060b0247/" target="_blank" rel="noopener noreferrer"><span>LINKEDIN</span><strong>Meu perfil profissional ↗</strong></a>
+          <a href="https://www.youtube.com/@kevynignacio" target="_blank" rel="noopener noreferrer"><span>YOUTUBE</span><strong>Meu canal ↗</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-
-        </section>
-
-        <section id="skills">
-
-            <h2>Skills</h2>
-
-                <article>   
-                    <h3>Estruturação de Interfaces</h3>
-                        <ul>
-                            <li>HTML semântico</li>
-                            <li>Organização de layout</li>
-                        </ul>
-                </article>
-
-                <article>
-                    <h3>Estilização e Responsividade</h3>
-                        <ul>
-                            <li>CSS</li>
-                            <li>Flexbox</li>
-                        </ul>
-                </article>
-
-                <article>
-                    <h3>Interatividade</h3>
-                    <ul>
-                    <li>JavaScript</li>
-                    <li>Manipulação de DOM</li>
-                    </ul>
-                </article>
-
-        </section>
-
-        <section id="contato">
-
-            <h2>Contato</h2>
-
-            <article>
-                <p>Estou disponível para oportunidades e novos projetos. Sinta-se à vontade para entrar em contato.</p>
-
-                    <ul>
-                        <li>
-                            <a href="mailto:kevynestudante01@gmail.com?subject=Contato%20via%20Portfólio">
-                                <i class="fa-solid fa-envelope"></i>
-                                kevynestudante01@gmail.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/KevynIgnacio" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                                    GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/kevyn-ignacio-a060b0247/" target="_blank">
-                                <i class="fa-brands fa-linkedin"></i>
-                                    LinkedIn
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Cachoeirinha | RS
-                        </li>
-                    </ul>
-
-            </article>
-
-        </section>
-
-    </main>
+  <footer class="footer"><div class="container"><a class="logo" href="#inicio">&lt;/kevyn&gt;<span>.</span></a><p>© <span id="year"></span> Kevyn Ignacio. Feito com intenção e código.</p><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
